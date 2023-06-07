@@ -1,6 +1,7 @@
 pip==23.1.2
 pandas
 numpy
+request
 Pillow
 python-multipart
 matplotlib
