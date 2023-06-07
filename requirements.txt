@@ -10,7 +10,6 @@ flask
 Pillow
 matplotlib
 plotly
-Request
 streamlit_lottie
 streamlit_option_menu
 tensorflow
