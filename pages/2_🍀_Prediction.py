@@ -6,6 +6,8 @@ import tensorflow as tf
 from skimage import transform
 import matplotlib.pyplot as plt
 from keras.preprocessing import image
+import keras.utils as image
+from keras.utils import load_img
 import numpy as np
 
 st.header("UPLOAD IMAGE TO PREDICT")
