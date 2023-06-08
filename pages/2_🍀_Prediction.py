@@ -11,44 +11,44 @@ from keras.utils import load_img
 import numpy as np
 
 st.header("UPLOAD IMAGE TO PREDICT")
-Classes = ["Apple___Apple_scab", 
-           "Apple___Black_rot", 
-           "Apple___Cedar_apple_rust", 
-           "Apple___healthy", 
-           "Blueberry___healthy", 
-           "Cherry_(including_sour)___Powdery_mildew", 
-           "Cherry_(including_sour)___healthy",
-           "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot", 
-           "Corn_(maize)___Common_rust",  
-           "Corn_(maize)___Northern_Leaf_Blight", 
-           "Corn_(maize)___healthy",
-           "Grape___Black_rot", 
-           "Grape__Esca(Black_Measles)", 
-           "Grape__Leaf_blight(Isariopsis_Leaf_Spot)",  
-           "Grape___healthy",
-           "Orange__Haunglongbing(Citrus_greening)", 
-           "Peach___Bacterial_spot", 
-           "Peach___healthy", 
-           "Pepper_bell__Bacterial_spot", 
-           "Pepper_bell__healthy", 
-           "Potato___Early_blight",
-           "Potato___Late_blight",
-           "Potato___healthy",
-           "Raspberry___healthy", 
-           "Soybean___healthy", 
-           "Squash___Powdery_mildew", 
-           "Strawberry___Leaf_scorch",
-           "Strawberry___healthy",
-           "Tomato___Bacterial_spot",
-           "Tomato___Early_blight",
-           "Tomato___Late_blight",
-           "Tomato___Leaf_Mold",
-           "Tomato___Septoria_leaf_spot",
-           "Tomato___Spider_mites Two-spotted_spider_mite",
-           "Tomato___Target_Spot",
-           "Tomato___Tomato_Yellow_Leaf_Curl_Virus" ,
-           "Tomato___Tomato_mosaic_virus",
-           "Tomato___healthy",
+Classes = [":red[UnHealthy Leaf]: Apple___Apple_scab", 
+           ":red[UnHealthy Leaf]: Apple___Black_rot", 
+           ":red[UnHealthy Leaf]: Apple___Cedar_apple_rust", 
+           ":red[Healthy Leaf]: Apple___healthy", 
+           ":red[Healthy Leaf]: Blueberry___healthy", 
+           ":red[UnHealthy Leaf]: Cherry_(including_sour)___Powdery_mildew", 
+           ":red[Healthy Leaf]: Cherry_(including_sour)___healthy",
+           ":red[UnHealthy Leaf]: Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot", 
+           ":red[UnHealthy Leaf]: Corn_(maize)___Common_rust",  
+           ":red[UnHealthy Leaf]: Corn_(maize)___Northern_Leaf_Blight", 
+           ":red[Healthy Leaf]: Corn_(maize)___healthy",
+           ":red[UnHealthy Leaf]: Grape___Black_rot", 
+           ":red[UnHealthy Leaf]: Grape__Esca(Black_Measles)", 
+           ":red[UnHealthy Leaf]: Grape__Leaf_blight(Isariopsis_Leaf_Spot)",  
+           ":red[Healthy Leaf]: Grape___healthy",
+           ":red[UnHealthy Leaf]: Orange__Haunglongbing(Citrus_greening)", 
+           ":red[UnHealthy Leaf]: Peach___Bacterial_spot", 
+           ":red[Healthy Leaf]: Peach___healthy", 
+           ":red[UnHealthy Leaf]: Pepper_bell__Bacterial_spot", 
+           ":red[Healthy Leaf]: Pepper_bell__healthy", 
+           ":red[UnHealthy Leaf]: Potato___Early_blight",
+           ":red[UnHealthy Leaf]: Potato___Late_blight",
+           ":red[Healthy Leaf]: Potato___healthy",
+           ":red[Healthy Leaf]: Raspberry___healthy", 
+           ":red[Healthy Leaf]: Soybean___healthy", 
+           ":red[UnHealthy Leaf]: Squash___Powdery_mildew", 
+           ":red[UnHealthy Leaf]: Strawberry___Leaf_scorch",
+           ":red[Healthy Leaf]: Strawberry___healthy",
+           ":red[UnHealthy Leaf]: Tomato___Bacterial_spot",
+           ":red[UnHealthy Leaf]: Tomato___Early_blight",
+           ":red[UnHealthy Leaf]: Tomato___Late_blight",
+           ":red[UnHealthy Leaf]: Tomato___Leaf_Mold",
+           ":red[UnHealthy Leaf]: Tomato___Septoria_leaf_spot",
+           ":red[UnHealthy Leaf]: Tomato___Spider_mites Two-spotted_spider_mite",
+           ":red[UnHealthy Leaf]: Tomato___Target_Spot",
+           ":red[UnHealthy Leaf]: Tomato___Tomato_Yellow_Leaf_Curl_Virus" ,
+           ":red[UnHealthy Leaf]: Tomato___Tomato_mosaic_virus",
+           ":red[Healthy Leaf]: Tomato___healthy",
            ]
 image_file = st.file_uploader("Upload An Image",type=['png','jpeg','jpg'])
 def load_image(image_file):
@@ -92,23 +92,14 @@ if clk:
     st.image(new_img)
     plt.axis('off')
     plt.title(class_name+" "+ str(max_prob)[0:4]+"%")
+    st.write(":blue[Predicted Image]")
     st.write(class_name)
     plt.show()
 
 
 
 
-#files = [os.path.join(directory,p) for p in sorted(os.listdir(directory))] 
-    #st.write(directory)
-    #st.write(directory)
-    # st.write(files[0])
-    # st.image(files)
 
-    # directory="./images/"
-    # files = [os.path.join(directory,p) for p in sorted(os.listdir(directory))] 
-        
-    #remove_file=files[0]
-    #os.remove(files[0])
 
 
     
