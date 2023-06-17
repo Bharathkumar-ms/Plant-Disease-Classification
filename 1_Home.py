@@ -13,7 +13,7 @@ st.markdown(
     '''
     ### Introduction
 
-###### Creating an  Web application that detects diseases in plants using Convolutional Neural Network (CNN), which is a Deep Learning Algorithm. According to the Food and Agriculture Organization of the United Nations (UN), transboundary plant pests and diseases affect food crops, causing significant losses to farmers and threatening food security.
+###### Creating an  Web application that detects diseases in plants using Convolutional Neural Network (CNN), which is a Deep Learning Algorithm.
 
 ### Motive
 
