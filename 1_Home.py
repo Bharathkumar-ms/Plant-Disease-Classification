@@ -13,7 +13,7 @@ st.markdown(
     '''
     ### Introduction
 
-###### Creating an  Web application that detects diseases in plants using Convolutional Neural Network (CNN), which is a Deep Learning Algorithm.
+###### The primary objective of this project is to detect and classify plant diseases at an early stage. Early detection can help farmers take timely action to prevent the spread of diseases and minimize crop loss.
 
 ### Motive
 
